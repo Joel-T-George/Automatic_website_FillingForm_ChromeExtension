@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Setup</title>
+	<script type="text/javascript" src="libs/xlsx.full.min.js"></script>
+</head>
+	<body>
+		<style type="text/css">
+		th {
+		  padding: 3px;
+		  magrin:3px;
+		  text-align: center;    
+		}
+		.personshow{
+			padding: 3px;
+		  	magrin:3px;
+		  	text-align: left;
+
+		}
+		.scrollDiv{
+			height: 400px;
+			width: 275px;
+			overflow-y: auto;
+			overflow-x: hidden;
+
+		}
+	
+		
+		</style>
+
+		<header>
+			
+		</header>
+		<div id = "GetInputFile">
+			<h1>joel is code</h1>
+			<input type="file"id = "Excelfileselection" accept=".xlsx,.xls">
+			<input type="submit" id="filesubmit">
+		</div>
+		<div id ="Showprofiles" style="display:none">
+			<h4 id=count></h4>
+			<div class=scrollDiv>
+				<div id="profilestatus">
+					
+					<table id="tableTodisplay" >
+					  	
+					  	
+					</table>
+					
+					
+				</div>
+			</div>
+			<div id="method-to-do" style="margin: 10px; ">
+				<label style="margin: 20px;">Method to Do </label>
+				<select name="methodToprocess" style="margin: 12px; padding: 5px;">
+					<option value="" selected>Choose one process</option>
+					<option value="ICMR-UPDATE">Completed SRF To ICMR Update</option>
+					<option value="RESULT-ENTRY">Result Entry In ICMR PORTAL</option>
+					<option value="UPDATE-SOFTWARE">Entry ICMR and SRF ID in Software</option>
+				</select>
+				<button style="margin-left: 25px;margin-top: 9px;margin-bottom: 10px; padding: 10px;">Go</button>
+				<button style="margin-left: 50px;margin-top: 9px;margin-bottom: 10px; padding:10px">Cancel</button>
+
+			</div>	
+		</div>
+
+		<script type="text/javascript" src="popup.js"></script>
+
+	</body>
+</html>
