@@ -1,0 +1,75 @@
+body{
+	margin: 12px;
+
+}
+#title{
+	text-align: left;
+}
+.inlinetext{
+	vertical-align:middle;
+	height: 50px;
+	width: 50px;
+}
+#Options{
+	height: 20px;
+	width: 20px;
+}
+#custom-text{
+	word-break: break-all;
+}
+input#filesubmit{
+	width: 55px;
+    height: 37px;
+    background-color: #89CFF0;
+    border: none;
+    padding: 0;
+    box-shadow: 5px 5px 2px rgba(240, 240, 240, 1.0);
+    
+} 
+input#filesubmit:hover{
+	box-shadow: 2.5px 2.5px 0.1px rgba(240, 240, 240, 0.9);
+}
+#custom-file{
+	box-shadow: 5px 5px 2px rgba(240, 240, 240, 1.0);
+
+}
+
+th {
+  	padding: 3px;
+  	magrin:3px;
+ 	text-align: center;    
+}
+.personshow{
+	padding: 3px;
+  	magrin:3px;
+  	text-align: left;
+
+}
+.scrollDiv{
+	height: 300px;
+	width: 275px;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+}
+header img {
+	float: left;
+	width: 100px;
+	height: 100px;
+	padding-bottom: 20px;
+		
+}
+header h2 {
+	position: relative;
+	top:5px;
+	left: 18px;
+	padding: 4px;
+}
+.danger{
+	color: red;
+	text-shadow: 2px 2px 1px rgba(240, 240, 240, 1.0);
+}
+.safe{
+	color: green;
+	text-shadow: 2px 2px 1px rgba(240, 240, 240, 1.0);
+}

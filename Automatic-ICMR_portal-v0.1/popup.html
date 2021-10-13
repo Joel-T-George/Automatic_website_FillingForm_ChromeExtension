@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Setup</title>
-	<script type="text/javascript" src="libs/xlsx.full.min.js"></script>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<title>Popup Extension</title>
+		<link rel="stylesheet" type="text/css" href="style/extension.css">
+		<script type="text/javascript" src="libs/xlsx.full.min.js"></script>
+	</head>
 	<body>
-		<style type="text/css">
-		th {
-		  padding: 3px;
-		  magrin:3px;
-		  text-align: center;    
-		}
-		.personshow{
-			padding: 3px;
-		  	magrin:3px;
-		  	text-align: left;
-
-		}
-		.scrollDiv{
-			height: 400px;
-			width: 275px;
-			overflow-y: auto;
-			overflow-x: hidden;
-
-		}
-	
-		
-		</style>
-
 		<header>
+
+			<img src="images/logo128px.png" style="height: 40px; width: 50px;" alt="logo" />
+			<h2 id="title">J Plus G Automate</h2>
 			
 		</header>
-		<div id = "GetInputFile">
-			<h1>joel is code</h1>
-			<input type="file"id = "Excelfileselection" accept=".xlsx,.xls">
-			<input type="submit" id="filesubmit">
+		<div id = "GetInputFile" style="height:67px; width:285px; margin-top: 28px;">
+			<table>
+				<tr>
+					<th><input type="image" class="inlinetext" src="images/excel.png" title="Click Upload" id ="custom-file"></th>
+					<th><span style="width: 1px;"id="custom-text">Hey Upload Your Excel File (.xlsx,.xls)</span></th>
+					<th><input type="submit" id="filesubmit"></th>
+				</tr>
+			</table>
+			
+			<input hidden="true" type="file"id = "Excelfileselection" accept=".xlsx,.xls">	
 		</div>
+		
+		
+		<table>
+			<tr>	
+				<th><input type="image" src="images/options.png" id="Options" title="Options" name="Options" value="Options"></th>
+				<th><span id="status"></span></th>
+			</tr>
+		</table>
+		
+		
 		<div id ="Showprofiles" style="display:none">
-			<h4 id=count></h4>
+			<h5 id=count></h5>
+			<h5 id="balance"></h5>
 			<div class=scrollDiv>
 				<div id="profilestatus">
 					
@@ -52,11 +50,11 @@
 			</div>
 			<div id="method-to-do" style="margin: 10px; ">
 				<label style="margin: 20px;">Method to Do </label>
-				<select name="methodToprocess" style="margin: 12px; padding: 5px;">
+				<select name="methodToprocess" id="To-process" style="margin: 12px; padding: 5px;">
 					<option value="-" selected>Choose one process</option>
 					<option value="ICMR-UPDATE">Completed SRF To ICMR Update</option>
-					<option value="RESULT-ENTRY">Result Entry In ICMR PORTAL</option>
-					<option value="UPDATE-SOFTWARE">Entry ICMR and SRF ID in Software</option>
+					
+					
 				</select>
 				<button id="nextstep"style="margin-left: 25px;margin-top: 9px;margin-bottom: 10px; padding: 10px;">Go</button>
 				<button id="cancelprocess" style="margin-left: 50px;margin-top: 9px;margin-bottom: 10px; padding:10px">Cancel</button>

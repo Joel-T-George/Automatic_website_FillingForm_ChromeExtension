@@ -1,6 +1,6 @@
 {
   "name":"J Plus G Automatic Tool",
-  "description": "this extension say some infomation state ,taluk, pincode and area",
+  "description": "Automatic of Icmr Website Clinical Data Entry Section For Completed SRF form Future Update..",
   "version":"1.0.1",
   "manifest_version":2,
   "author":"Joel T George",
@@ -25,12 +25,13 @@
     "scripts": ["background.js"],
     "persistent": false
   },
-   "content_scripts": [
-   {
-     "matches": ["<all_urls>"],
+  "options_page": "options.html",
+  "content_scripts": [
+  {
+    "matches": ["<all_urls>"],
      
-     "js": ["content.js"]
-   }
+    "js": ["content.js"]
+  }
  ]
 
   
