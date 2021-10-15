@@ -11,23 +11,33 @@
 </head>
 <body>
 	<header>
-		<img src="images/logo48px.png" alt="" >
-		<h1>J Plus G Automate</h1>	
+		<img class="logo"src="images/logo48px.png" alt="" >
+		<h1 class="logo-title">J Plus G Automate</h1>	
 	</header>
+	<div id="status" class="msgbox">
+		<h3 id="statustext"></h3>
+	</div>
 	<div id="page-container">
 		<section>
 			<h2>Format of Excel For Different Process</h2>
-			<div>
-				<label>Completed Srf To Update ICMR Portal</label>
-				<button id="FileCompSrfUpdIcmr">Excel Template</button>
-			</div>
-			<div>
-				<label>UnCompleted Srf To Update ICMR Portal</label>
-				<button id="FileUnCompSrfUpdIcmr">Excel Template</button>
-			</div>
-			<div>
-				<label>Update ICMR Portal without SRF ID</label>
-				<button id="FileUnCompSrfUpdIcmr">Excel Template</button>
+			<div id="listingexcelformat" class="container-export">
+				<div >
+					<h3>Completed Srf To Update ICMR Portal</h3>
+					<button id="FileCompSrfUpdIcmr" hidden>Excel Template</button>
+					<input type="image" class="inlinetext" src="images/excel.png" title="Click Download" id ="imgCompSrfUpdIcmr">
+				</div>
+				<div >
+					<h3>UnCompleted Srf To Update ICMR Portal</h3>
+					<button id="FileUnCompSrfUpdIcmr" hidden>Excel Template</button>
+					<input type="image" class="inlinetext" src="images/excel.png" title="Click Download" id ="imgUnCompSrfUpdIcmr">
+				</div>
+				<div >
+
+					<h3>Update ICMR Portal without SRF ID</h3>
+					<button id="FilewithoutSrfUpdIcmr" hidden>Excel Template</button>
+					<input type="image" class="inlinetext" src="images/excel.png" title="Click Download" id ="imgwithoutSrfUpdIcmr">
+				</div>
+			
 			</div>
 		</section>
 		<section class="container-time">
@@ -80,7 +90,7 @@
 			</div>
 		</section>
 	</div>
-	<footer>
+	<footer class="footer">
 		<p>This is a footer. This stays at the bottom of the page.</p>
 	</footer>
 	<script type="text/javascript" src="options.js"></script>

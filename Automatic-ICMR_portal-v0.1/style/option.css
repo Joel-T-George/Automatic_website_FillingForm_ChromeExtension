@@ -4,7 +4,78 @@
 body{
 	margin:0
 }
+.container-export{
 
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 33.6875rem;
+    height: 10.9375rem;
+	white-space: nowrap;
+	margin-left:1.25rem;
+	
+}
+.container-export::-webkit-scrollbar{
+	display: none;
+}
+.container-export div{
+	display: inline-block;
+	width: 16.0625rem;
+    background-color: #eee;
+    float: none;
+    height: 9.375rem;
+    margin: 0.39375rem;
+	border-radius:0.5rem;
+	padding-left: 14px;
+    padding-top: 5px;
+    padding-right: 0;
+	word-wrap: break-word;
+	
+}
+.inlinetext{
+	width: 60px;
+}
+.container-export div:hover{
+	width: 17.0625rem;
+	height: 9.975rem;
+	margin: 0;
+	box-shadow:6px 5px 6px #74ccf2;
+	
+	
+}
+.visibility {
+	display:block;
+}
+.not-visibility {
+	display:none;
+}
+.msgbox{
+	margin:0;
+	padding:0px;
+}
+.msgbox h3 {
+	padding:0;
+}
+.logo {
+	position:absolute;
+	margin:2.4353vh;
+	left:0;
+	max-width:7.3059vh;
+	min-height:7.30593vh;
+}
+.logo-title{
+	position:absolute;
+	margin:2.4353120vh;
+	left:10.9589041vh;
+	margin-left: 3.165905vh;
+	font-size:4.370624vh
+	
+}
+header{
+	position: relative;
+	min-height:  11.41552vh;
+	background-color:rgba(142, 159, 245,0.6);
+	box-shadow:3px 2px 3px #74ccf2;
+}
 .container-time{
 	position:relative;
 	max-width:40rem;
@@ -18,12 +89,13 @@ body{
 	border: none;
 	background-color:#4394e154;
     padding: 0.4rem;
+	border-radius:0.4rem
 	
 }
 
 .btn-t:hover{
 	background-color:#4394e1db;
-	box-shadow:2px 1.5px 2px #888888;
+	box-shadow:4px 3px 4px #74ccf2;
 }
 .tsr{
 	position:absolute;
@@ -37,7 +109,7 @@ body{
 .tst{
 	position:absolute;
 	left:20rem;
-	width: 20rem;
+	width: 15rem;
 	height:10rem;
 	margin:0;
 	margin-left:2.5rem;
@@ -58,19 +130,23 @@ div.seconds {
 
 }
 
- footer {
-	 
+.footer {
+	position: fixed;
 	bottom:0;
 	width:100%;
-	height:3rem;   /* Height of the footer */
-	background:#6cf;
+	height:7.3059vh;   /* Height of the footer */
+	background:#bbe7fa;
+}
+.footer p{
+	font-size:1.99vh;
 }
 #content-wrap {
   padding-bottom: 2.5rem;    /* Footer height */
 }
 #page-container {
   position: relative;
-  min-height: 80vh;
+  min-height: 32.85rem;
+  margin: 15px;
 }
 .hours input{
 	width: 2rem;
@@ -128,20 +204,20 @@ div.seconds {
 .hours input:hover{
 	width: 2.5rem;
 	height: 2.5rem;
-	box-shadow:2px 2px 2px #888888;
+	box-shadow:4px 2px 4px #74ccf2;
 	font-size:30px;
 	
 }
 .minutes input:hover{
 	width: 2.5rem;
 	height: 2.5rem;
-	box-shadow:2px 2px 2px #888888;
+	box-shadow:4px 2px 4px #74ccf2;
 	font-size:30px;
 }
 .seconds input:hover{
 	width: 2.5rem;
 	height: 2.5rem;
-	box-shadow:2px 2px 2px #888888;
+	box-shadow:4px 2px 4px #74ccf2;
 	font-size:30px;
 }
 
